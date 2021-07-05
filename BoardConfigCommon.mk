@@ -110,6 +110,9 @@ TARGET_KERNEL_CLANG_VERSION := proton
 KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/clang/host/linux-x86/clang-proton/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-gnu-
 
+# NFC
+TARGET_USES_NQ_NFC := true
+
 # Partitions
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 201326592
